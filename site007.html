@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CookFlix</title>
+  <title>Cooking 40 Movies</title>
   <style>
     body {
       background-color: rgb(177, 236, 255);
@@ -106,47 +106,64 @@
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <button onclick="confirmarSaida()" class="custom-button">
-      <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE="
-           alt="Ícone TV">
-      Voltar à página inicial
-    </button>
-  </div>
+<div class="button-container">
+  <button onclick="confirmarSaida()" class="custom-button">
+    <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+         alt="Ícone TV">
+    Voltar à página inicial
+  </button>
+</div>
 
-  <h1>Calzone dos Ursos Sem Curso</h1>
+  <h1>Calzone Gigante – Urso Sem Curso</h1>
   <h2>Ingredientes</h2>
-  <h3>Rendimento: 2 a 4 calzones</h3>
+  <h3>Rendimento: 4 porções</h3>
   <div>
-    <p><strong>Massa:</strong> massa de pizza ou pão salgado pronta ou caseira</p>
-    <p><strong>Recheio (No Estilo do Polar):</strong></p>
-    <ul>
-      <li>Molho de tomate</li>
-      <li>Queijo (muçarela ou mistura)</li>
-      <li>Carne (bacon, presunto ou outra proteína)</li>
-    </ul>
+    <p><strong>Massa:</strong></p>
+    <p>500g de farinha de trigo</p>
+    <p>10g de fermento biológico seco</p>
+    <p>1 colher de sopa de açúcar</p>
+    <p>1 colher de chá de sal</p>
+    <p>3 colheres de sopa de azeite de oliva</p>
+    <p>300ml de água morna</p>
+    <br>
+    <strong>Recheio (bem exagerado):</strong>
+    <p>300g de mussarela ralada</p>
+    <p>200g de presunto ou pepperoni fatiado</p>
+    <p>1 xícara de molho de tomate</p>
+    <p>1/2 xícara de requeijão ou cream cheese</p>
+    <p>Orégano a gosto</p>
+    <p>Pimenta-do-reino a gosto</p>
+    <p>Queijo parmesão ralado para finalizar</p>
   </div>
 
   <h2>Modo de Preparo</h2>
-  <p>1‑ Estenda a massa em formato circular.</p>
-  <p>2‑ Espalhe um pouco de molho no centro, dentro de um “círculo”.</p>
-  <p>3‑ Acrescente carne e queijo dentro do círculo.</p>
-  <p>4‑ Dobre uma metade sobre a outra, selando como concha.</p>
-  <p>5‑ Asse em forno ou panela por ~1 hora (ou até dourar e o centro assar bem).</p>
+  <p>1- Em uma tigela, misture o fermento, o açúcar e a água morna. Deixe descansar por 10 minutos.</p>
+  <p>2- Acrescente o azeite, o sal e a farinha aos poucos, até formar uma massa macia.</p>
+  <p>3- Sove a massa por cerca de 10 minutos, cubra e deixe crescer por 1 hora.</p>
+  <p>4- Abra a massa em formato de círculo grande, como uma pizza.</p>
+  <p>5- Espalhe o molho de tomate apenas em metade da massa.</p>
+  <p>6- Adicione a mussarela, o presunto, o requeijão e os temperos.</p>
+  <p>7- Dobre a massa ao meio, formando o calzone, e feche bem as bordas.</p>
+  <p>8- Polvilhe parmesão por cima.</p>
+  <p>9- Leve ao forno preaquecido a 200°C por cerca de 30 minutos ou até dourar.</p>
+  <p>10- Sirva quente, com o queijo bem derretido, no estilo exagerado do filme.</p>
 
-  <h3>Um clássico do trio mais fofo da América!</h3>
+  <h3>Bom Apetite!</h3>
 
   <h2>Deixe sua Foto ou Opinião Abaixo</h2>
   <div class="feedback-container">
     <form action="#" method="post" enctype="multipart/form-data">
       <label for="opinion">Sua opinião:</label><br>
-      <textarea id="opinion" name="opinion" rows="5" placeholder="Digite aqui..." required></textarea><br>
+      <textarea id="opinion" name="opinion" rows="5" cols="50" placeholder="Digite aqui..." required></textarea><br><br>
+
       <label for="photo">Sua foto (opcional):</label><br>
-      <input type="file" id="photo" name="photo" accept="image/*"><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
       <button type="submit">Enviar</button>
     </form>
   </div>
 
+</body>
 <script>
   function confirmarSaida() {
     if (confirm("Tem certeza que deseja sair desta página?")) {
@@ -154,5 +171,4 @@
     }
   }
 </script>
-</body>
 </html>

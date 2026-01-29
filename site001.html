@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CookFlix</title>
+  <title>Cooking 40 Movies</title>
   <style>
     body {
       background-color: rgb(177, 236, 255);
@@ -20,6 +20,13 @@
       padding: 20px;
     }
 
+        h2 {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+      padding: 20px;
+    }
+
     r {
       color: black;
     }
@@ -30,7 +37,7 @@
 
     .banner {
       width: 100%;
-      max-height: 700px;
+      max-height: 600px;
     }
 
     .galeria {
@@ -75,19 +82,74 @@
       font-size: 16px;
       color: #000;
     }
+
+/* Suavização geral */
+body {
+  background: linear-gradient(180deg, rgb(163, 218, 236), #c0d6ec);
+}
+
+/* Galeria com mais respiro */
+.galeria {
+  padding-bottom: 60px;
+}
+
+/* Polaroid mais delicada */
+.polaroid {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.polaroid:hover {
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Área da frase inspiradora */
+.frase-cinema {
+  background: rgba(1, 24, 54, 0.7);
+  margin: 60px auto 40px;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Rodapé */
+footer {
+  background-color: rgb(102, 185, 233);
+  color: #000;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 16px;
+}
+
+footer strong {
+  font-size: 18px;
+}
+
   </style>
 </head>
 <body>
   <div class="center">
     <img
       class="banner"
-      src="https://87c587b774.cbaul-cdnwnd.com/0aaca04a8a983852ec44f506f7b48d7b/200000013-08f1608f18/unnamed.webp?ph=87c587b774"
+      src="https://87c587b774.cbaul-cdnwnd.com/0aaca04a8a983852ec44f506f7b48d7b/200000015-0fd8f0fd91/cooking.webp?ph=87c587b774"
       alt="Cookflix banner"
     />
-    <h1>CookFlix - As Melhores Receitas de Séries, Filmes, Programas e Desenhos você encontra aqui!
-      <p>Seja Bem Vindo!</p>
-    </h1>
+    <div class="frase-cinema">
+    <h2> As 40 Melhores Receitas de Séries, Filmes, Programas e Desenhos estão aqui à sua disposição, para que você possa fazê-las sem complicação!
+      <p>Seja Bem Vindo!</p></div>
+      <div class="frase-cinema">
+      <P>PS: A opção de enviar fotos e comentários está aparecendo em cada receita, porém não está ativada. Futuramente teremos atualizações para que funcione</P>
+ </div></h2>
   </div>
+
+<div class="frase-cinema">
+  “Filmes nos ensinam a sentir, sonhar e acreditar novamente.
+  Às vezes, tudo o que precisamos é de uma boa história
+  para lembrar que a vida ainda pode ser bonita.”
+</div>
 
   <div class="galeria">
     <a href="site003.html">
@@ -128,7 +190,7 @@
     </a>
     <a href="site008.html">
       <div class="polaroid">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHeDQtvjzYpPsewtyAFESWSzirAMOYWR84mw&s" alt="Torta de Sorvete da Moranguinho"/>
+        <img src="https://87c587b774.cbaul-cdnwnd.com/0aaca04a8a983852ec44f506f7b48d7b/200000017-c86e0c86e2/450/download.webp?ph=87c587b774" alt="Torta de Sorvete da Moranguinho"/>
         <p><r>Torta de Sorvete da Moranguinho</r></p>
       </div>
     </a>
@@ -153,211 +215,230 @@
 
 <a href="site012.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/6e/0b/1a/6e0b1a3c5e8f9d2a7b4c.jpg" alt="Cerveja Amanteigada de Harry Potter"/>
-    <p><r>Cerveja Amanteigada de Harry Potter</r></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcP9yu6C9pqNo3gdErvcG1jyas6Jq9x0zHQ&s" alt="Biscoitos Scooby"/>
+    <p><r>Biscoitos Scooby</r></p>
   </div>
 </a>
 
 <a href="site013.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/1f/5b/8c/1f5b8c3e7a6d4b9.jpg" alt="Lasanha do Garfield"/>
-    <p><r>Lasanha do Garfield</r></p>
+    <img src="https://world-of-shinobi.weebly.com/uploads/2/6/2/4/26242361/947302_orig.jpg" alt="Lámen do Ichiraku (Naruto)"/>
+    <p><r>Lámen do Ichiraku (Naruto)</r></p>
   </div>
 </a>
 
 <a href="site014.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/4d/1b/8f/4d1b8f3c5e7a9c0b6.jpg" alt="Donut do Homer Simpson"/>
+    <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/2r7ky8x5e4844.jpg" alt="Donut do Homer Simpson"/>
     <p><r>Donut do Homer Simpson</r></p>
   </div>
 </a>
 
 <a href="site015.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/8c/5e/2a/8c5e2a1d4f7b9c6.jpg" alt="Waffles da Eleven"/>
-    <p><r>Waffles da Eleven</r></p>
+    <img src="https://preview.redd.it/which-pizza-toppings-do-you-think-each-of-the-turtles-would-v0-pwnipxsez97c1.jpeg?auto=webp&s=1ca2b56574d46ea121c84a90f5a4a46362677ca5" alt="Pizza de Pepperoni (Tartarugas Ninja)"/>
+    <p><r>Pizza de Pepperoni (Tartarugas Ninja)</r></p>
   </div>
 </a>
 
 <a href="site016.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/9e/2c/1f/9e2c1f5b8a7d0c6e4.jpg" alt="Hambúrguer do Scooby-Doo"/>
-    <p><r>Hambúrguer do Scooby-Doo</r></p>
+    <img src="https://i.ytimg.com/vi/zovDnurghQc/maxresdefault.jpg" alt="Sanduíche do Scooby-Doo"/>
+    <p><r>Sanduíche do Scooby-Doo</r></p>
   </div>
 </a>
 
 <a href="site017.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/3d/8f/0c/3d8f0c9e2b1a7f6c5d4e.jpg" alt="Bolo da Branca de Neve"/>
-    <p><r>Bolo da Branca de Neve</r></p>
+    <img src="https://truffle-assets.tastemadecontent.net/cdn-cgi/image/width=640/84cnzp0itw1q_as4178398166001_bolodechocolatedematildaorcomidadecinema.jpeg.jpeg" alt="Bolo da Matilda"/>
+    <p><r>Bolo da Matilda</r></p>
   </div>
 </a>
 
 <a href="site018.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/5a/2e/9f/5a2e9f8c4b7d1a6f0c3e.jpg" alt="Cupcake da Minnie"/>
-    <p><r>Cupcake da Minnie</r></p>
+    <img src="https://aseatenontv.wordpress.com/wp-content/uploads/2013/02/spencer.jpg" alt="Spaghetti Tacos – iCarly"/>
+    <p><r>Spaghetti Tacos – iCarly</r></p>
   </div>
 </a>
 
 <a href="site019.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/5e/8a/1c/5e8a1c3d7f4b9c0.jpg" alt="Lámen do Naruto"/>
-    <p><r>Lámen do Naruto</r></p>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtoHuTUmwmR5EiQcGkP71WVCDbPk96nhub3kZje77q2oZkuoDSBrgRWP7z4H7sLeFjXaeYCzH5LVPLqqSkxFoZRqKXsaPIH0Sorb_VkazfGDKeIWvkEQFBi6KN_tuCJouh8TwbfOe5Hpjh/s1600/jake+sandwich+horizontal.jpg" alt="Jake's Perfect Sandwich"/>
+    <p><r>Jake's Perfect Sandwich</r></p>
   </div>
 </a>
 
 <a href="site020.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/7d/5b/1c/7d5b1c9e8a4f3c0b2d6.jpg" alt="Torta de Limão da Mônica"/>
-    <p><r>Torta de Limão da Mônica</r></p>
+    <img src="https://i.pinimg.com/736x/da/df/d8/dadfd8a6ed5d3384110ee35800e4c0eb.jpg" alt="Torta de Limão da Mônica"/>
+    <p><r>Bolo Eat Me Alice No Pais Das Maravilhas</r></p>
   </div>
 </a>
-<a href="site020.html">
-  <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/5b/8e/0a/5b8e0a2d6c9f7a1e4b3c5d8f9a6e.jpg">
-    <p><r>Panquecas da Hora de Aventura</r></p>
-  </div>
-</a>
-
 <a href="site021.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/1f/4a/2c/1f4a2c9d7e5b8a6c0d3f2e9b4a1c8.jpg">
-    <p><r>Sanduíche do Scooby-Doo</r></p>
+    <img src="https://preview.redd.it/uh1yqe323z381.jpg?auto=webp&s=5a5671f98cd2700730596cb1ade64b51adcf7f2b">
+    <p><r>Macaron da Ladybug</r></p>
   </div>
 </a>
 
 <a href="site022.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/8b/2f/4e/8b2f4e6d9a5c1e7f3b0a2d8c4f9e.jpg">
-    <p><r>Bolo de Coco da Gabriela</r></p>
+    <img src="https://i.ytimg.com/vi/-DkbW1BZVro/maxresdefault.jpg">
+    <p><r>Torta de Manteiga Escocesa Pica Pau</r></p>
   </div>
 </a>
 
 <a href="site023.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/3a/6f/9c/3a6f9c1b8d5e4f7a2c9d0b6e8f.jpg">
-    <p><r>Churros de Divertida Mente</r></p>
+    <img src="https://i.ytimg.com/vi/Y3aybUVjoeE/maxresdefault.jpg">
+    <p><r>Mingau da Marsha</r></p>
   </div>
 </a>
 
 <a href="site024.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/9d/7b/1a/9d7b1a6c5e2f4b8d0a3c9e.jpg">
-    <p><r>Bolo Arco-Íris de My Little Pony</r></p>
+    <img src="https://truffle-assets.tastemadecontent.net/84cnzp0itw1q_as4178549791001_manjarturcodecronicasdenarniaorcomidadecinema.jpeg.jpeg">
+    <p><r>Manjar Turco de Crônicas de Nárnia</r></p>
   </div>
 </a>
 
 <a href="site025.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/4e/0d/8f/4e0d8f2c5a1b9d6e7c3f.jpg">
-    <p><r>Hambúrguer do Riverdale</r></p>
+    <img src="https://static.wikia.nocookie.net/harrypotter/images/4/4d/Cerveja_amanteigada_001.jpg/revision/latest/thumbnail/width/360/height/360?cb=20151230030517&path-prefix=pt-br">
+    <p><r>Cerveja Amanteigada de Harry Potter</r></p>
   </div>
 </a>
 
 <a href="site026.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/6e/5a/3f/6e5a3f1c2b8d9e4a7f0c.jpg">
-    <p><r>Bolo de Morango da Hello Kitty</r></p>
+    <img src="https://i.redd.it/week-8-animated-cheese-souffl%C3%A9-from-beauty-the-beast-v0-xgno4bedkyke1.jpg?width=1384&format=pjpg&auto=webp&s=9f341d79ceba8f318947389029cb8de1f730f3af">
+    <p><r>Soufflé de Queijo de A Bela e a Fera</r></p>
   </div>
 </a>
 
 <a href="site027.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/7c/1d/9a/7c1d9a3b4e5f8a6c2d0f.jpg">
-    <p><r>Torta de Maçã de Once Upon a Time</r></p>
+    <img src="https://pbs.twimg.com/media/EXm9S1uWAAAT4S9.png">
+    <p><r>O Rato no Espeto (Shrek)</r></p>
   </div>
 </a>
 
 <a href="site028.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/1a/9f/6d/1a9f6d4e5b3c8a2f7d0c.jpg">
-    <p><r>Cereal do Dragon Ball</r></p>
+    <img src="https://i.ytimg.com/vi/i3OY5z9oJzY/sddefault.jpg">
+    <p><r>A Torta de Melado (Harry Potter)</r></p>
   </div>
 </a>
 
 <a href="site029.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/2e/4a/8d/2e4a8d9f1b7c5e6a0d3f.jpg">
-    <p><r>Biscoitos da Alice no País das Maravilhas</r></p>
+    <img src="https://www.milkpoint.com.br/img/artigo/conteudo/113511/">
+    <p><r>Leite Azul (Star Wars)</r></p>
   </div>
 </a>
 
 <a href="site030.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/9f/8e/3a/9f8e3a5d4c1b7a6f2e0.jpg">
-    <p><r>Panquecas de Shrek</r></p>
+    <img src="https://www.planocritico.com/wp-content/uploads/2016/12/um-elfo-em-nova-york-plano-critico.jpg">
+    <p><r> O Macarrão com Doces do Buddy (Um Duende em Nova York) </r></p>
   </div>
 </a>
 
 <a href="site031.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/6c/4e/1b/6c4e1b8f9a3c5d7e2f0a1b4c8e6d9f5.jpg">
-    <p><r>Sopa do Naruto</r></p>
+    <img src="https://i.ytimg.com/vi/-lDsZnstpdU/maxresdefault.jpg">
+    <p><r>A Geleia de Água-Viva (Bob Esponja)</r></p>
   </div>
 </a>
 
 <a href="site032.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/2b/6d/9e/2b6d9e4f8a2c5e7d1a9b3f4c0e6d8a5f.jpg">
-    <p><r>Macarrão do Garfield</r></p>
+    <img src="https://ovicio.com.br/wp-content/uploads/2021/05/20210527-senzu-bean-555x555.jpg">
+    <p><r>O "Sensu Bean" / Semente dos Deuses (Dragon Ball)</r></p>
   </div>
 </a>
 
 <a href="site033.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/7a/9b/4c/7a9b4c8f0a2d6f1e4c5b9a3f2e1d8a6c.jpg">
-    <p><r>Feijoada de Avenida Brasil</r></p>
+    <img src="data:image/jpeg;base64,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">
+    <p><r>Os Ovos Benedict de O Diabo Veste Prada</r></p>
   </div>
 </a>
 
 <a href="site034.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/18/2c/1a/182c1a4b0c8d7a8f2c5a5b9a0d7c8f6b.jpg">
-    <p><r>Bolo de Chocolate de Matilda</r></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP2qud0PBcx2at5eayaSljDw7ly9p135kZBg&s">
+    <p><r>O "Gray Stuff" (A Coisa Cinza) de A Bela e a Fera</r></p>
   </div>
 </a>
 
 <a href="site035.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/5e/8a/1c/5e8a1c3d7f4b9c0.jpg">
-    <p><r>Lámen do Naruto Shippuden</r></p>
+    <img src="https://s.aficionados.com.br/imagens/gomu-gomu-no-mi_cke.jpg">
+    <p><r>Akuma No Mi (One Piece)</r></p>
   </div>
 </a>
 
 <a href="site036.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/2f/64/13/2f6413a6d44a8b77a5e2d94c2d4e9f5c.jpg">
-    <p><r>Café do Central Perk</r></p>
+    <img src="https://i.ytimg.com/vi/DnfZZOn8ZcE/sddefault.jpg?v=603d1403">
+    <p><r>Turducken (The Thundermans)</r></p>
   </div>
 </a>
 
 <a href="site037.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/0c/6b/77/0c6b77a64b0d4c1f73aaf9aef45c3c2e.jpg">
-    <p><r>Pizza das Tartarugas Ninja</r></p>
+    <img src="https://bunny-wp-pullzone-q9rgroatx7.b-cdn.net/wp-content/uploads/2025/03/mariana3-1.jpg">
+    <p><r>A "Pizza de Marguerita" de Comer, Rezar, Amar</r></p>
   </div>
 </a>
 
 <a href="site038.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/4e/5f/29/4e5f29e0f90b7a2f6e6f7c1b0b9e8a2d.jpg">
-    <p><r>Milkshake de Pulp Fiction</r></p>
+    <img src="https://preview.redd.it/i-tried-to-make-my-friend-the-sleeping-beauty-cake-for-her-v0-daltuzhezh291.jpg?width=640&crop=smart&auto=webp&s=bf1c212cd990442fa00be50770c1ddb4e787a372">
+    <p><r>O "Bolo de Aniversário" de A Bela Adormecida</r></p>
   </div>
 </a>
 
 <a href="site039.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/9c/4f/78/9c4f785d2c6c0e8b2d5c6c4a1c5b9f7c.jpg">
-    <p><r>Donuts dos Simpsons</r></p>
+    <img src="https://s2-receitas.glbimg.com/sa2C-XxgnKfgZndIrDYWJ0eQIFc=/0x0:7008x4672/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2025/g/T/tEBdqkQ0euM9sfEPPNNQ/sanduiche-de-pepino-da-laura-miranda.jpg">
+    <p><r>Mini Sanduíches de Pepino de Bridgerton</r></p>
   </div>
 </a>
 
 <a href="site040.html">
   <div class="polaroid">
-    <img src="https://i.pinimg.com/736x/6e/0b/1a/6e0b1a3c5e8f9d2a7b4c.jpg">
-    <p><r>Cerveja Amanteigada de Harry Potter</r></p>
+    <img src="https://s2-casaejardim.glbimg.com/vowoI1nkK9g8D5WyydEwfHugTnE=/0x0:1400x787/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2025/x/u/Rbz9hkTeupCiJ7y5URaw/receita-smores-sanduiche-marshamallow-chocolate-bolacha-selmi.jpg">
+    <p><r>O Sanduíche de Marshmallow e Manteiga de Amendoim (Número Cinco)</r></p>
   </div>
 </a>
+
+<a href="site041.html">
+  <div class="polaroid">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc-oCYYWKERQfyA1DOeoahiNJCd_y3x-e3kqaFIUjUGVcN1M-BD2vUb7AXRkpRfRRsj1CbAUj6QVeX24SBtkETzKKNptLqTcsqo3G2mL0WAVK7LHdLFCL3T3IuMdIRW7oyLO-rDj9pgIxp/s1600/P1010203.JPG">
+    <p><r>O Cordeiro com Molho de Cereja (Como Perder um Homem em 10 Dias)</r></p>
+  </div>
+</a>
+
+
+
+<footer style="
+  background-color: rgba(102, 185, 233, 0.9);
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 16px;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+">
+  <p>
+    Cooking 40 Movies © 2026 <br>
+    Criado por <strong>Décio Miguel - DM</strong> 🎬🍰 <br>
+    Onde filmes viram receitas e histórias viram sabor.
+  </p>
+</footer>
+
+
 </body>
 </html>
