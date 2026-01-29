@@ -4,23 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cooking 40 Movies</title>
+
   <style>
     body {
-      background-color: rgb(177, 236, 255);
+      background: linear-gradient(180deg, rgb(163, 218, 236), #c0d6ec);
       color: rgb(0, 0, 0);
       font: normal 20pt "Times New Roman", serif;
       margin: 0;
       padding: 0;
     }
 
-    h1 {
-      text-align: center;
-      color: rgb(0, 0, 0);
-      font: normal 40pt 'Edwardian Script ITC', cursive;
-      padding: 20px;
-    }
-
-        h2 {
+    h1, h2 {
       text-align: center;
       color: rgb(0, 0, 0);
       font: normal 40pt 'Edwardian Script ITC', cursive;
@@ -38,6 +32,7 @@
     .banner {
       width: 100%;
       max-height: 600px;
+      object-fit: cover;
     }
 
     .galeria {
@@ -45,7 +40,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      padding: 30px;
+      padding: 30px 20px 60px;
     }
 
     .galeria a {
@@ -63,11 +58,16 @@
     .polaroid {
       background-color: rgb(102, 185, 233);
       padding: 25px 25px 50px;
-      box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
       width: 200px;
       border: 1px solid #aacefd;
       font-size: 16px;
-      border-radius: 4px;
+      border-radius: 6px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .polaroid:hover {
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
     }
 
     .polaroid img {
@@ -80,76 +80,100 @@
     .polaroid p {
       margin-top: 10px;
       font-size: 16px;
-      color: #000;
     }
 
-/* Suavização geral */
-body {
-  background: linear-gradient(180deg, rgb(163, 218, 236), #c0d6ec);
-}
+    /* FRASES CINEMA */
+    .frase-cinema {
+      background: rgba(1, 24, 54, 0.7);
+      margin: 40px auto;
+      padding: 30px 40px;
+      max-width: 900px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-style: italic;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      color: #fff;
+    }
 
-/* Galeria com mais respiro */
-.galeria {
-  padding-bottom: 60px;
-}
+    .frase-cinema p {
+      margin-top: 10px;
+    }
 
-/* Polaroid mais delicada */
-.polaroid {
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+    footer {
+      background-color: rgb(102, 185, 233);
+      color: #000;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 16px;
+    }
 
-.polaroid:hover {
-  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
-}
+    /* ===== AJUSTES PARA CELULAR ===== */
+    @media (max-width: 768px) {
 
-/* Área da frase inspiradora */
-.frase-cinema {
-  background: rgba(1, 24, 54, 0.7);
-  margin: 60px auto 40px;
-  padding: 30px;
-  max-width: 900px;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 22px;
-  font-style: italic;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
+      body {
+        font-size: 16px;
+      }
 
-/* Rodapé */
-footer {
-  background-color: rgb(102, 185, 233);
-  color: #000;
-  text-align: center;
-  padding: 25px 10px;
-  font-size: 16px;
-}
+      h1, h2 {
+        font-size: 28pt;
+        padding: 15px 10px;
+      }
 
-footer strong {
-  font-size: 18px;
-}
+      .frase-cinema {
+        margin: 25px 15px;
+        padding: 20px;
+        font-size: 17px;
+        line-height: 1.6;
+      }
 
+      .galeria {
+        gap: 20px;
+        padding: 20px 10px 50px;
+      }
+
+      .polaroid {
+        width: 170px;
+        padding: 20px 20px 40px;
+      }
+
+      .polaroid p {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <div class="center">
     <img
       class="banner"
       src="https://87c587b774.cbaul-cdnwnd.com/0aaca04a8a983852ec44f506f7b48d7b/200000015-0fd8f0fd91/cooking.webp?ph=87c587b774"
       alt="Cookflix banner"
     />
+
     <div class="frase-cinema">
-    <h2> As 40 Melhores Receitas de Séries, Filmes, Programas e Desenhos estão aqui à sua disposição, para que você possa fazê-las sem complicação!
-      <p>Seja Bem Vindo!</p></div>
-      <div class="frase-cinema">
-      <P>PS: A opção de enviar fotos e comentários está aparecendo em cada receita, porém não está ativada. Futuramente teremos atualizações para que funcione</P>
- </div></h2>
+      <h2>
+        As 40 Melhores Receitas de Séries, Filmes, Programas e Desenhos estão aqui à sua disposição,
+        para que você possa fazê-las sem complicação!
+      </h2>
+      <p>Seja bem-vindo!</p>
+    </div>
+
+    <div class="frase-cinema">
+      <p>
+        PS: A opção de enviar fotos e comentários está aparecendo em cada receita,
+        porém ainda não está ativada. Futuramente teremos atualizações.
+      </p>
+    </div>
   </div>
 
-<div class="frase-cinema">
-  “Filmes nos ensinam a sentir, sonhar e acreditar novamente.
-  Às vezes, tudo o que precisamos é de uma boa história
-  para lembrar que a vida ainda pode ser bonita.”
-</div>
+  <div class="frase-cinema">
+    “Filmes nos ensinam a sentir, sonhar e acreditar novamente.
+    Às vezes, tudo o que precisamos é de uma boa história
+    para lembrar que a vida ainda pode ser bonita.”
+  </div>
 
   <div class="galeria">
     <a href="site003.html">
